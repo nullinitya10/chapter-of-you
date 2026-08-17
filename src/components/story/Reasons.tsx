@@ -60,7 +60,7 @@ export function Reasons() {
         </div>
       )}
 
-      {active !== null && (
+      {activeReason && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-background/85 px-6 backdrop-blur-sm"
           onClick={() => setActive(null)}
@@ -69,9 +69,9 @@ export function Reasons() {
             className="paper-card torn-edge animate-rise w-full max-w-md -rotate-1 px-8 py-10"
             onClick={(e) => e.stopPropagation()}
           >
-            <span className="font-display text-5xl text-primary">{reasons[active].n}</span>
-            <p className="mt-2 font-serif text-3xl">{reasons[active].title}</p>
-            <p className="mt-4 font-hand text-2xl leading-snug">{reasons[active].text}</p>
+            <span className="font-display text-5xl text-primary">{activeReason.n}</span>
+            <p className="mt-2 font-serif text-3xl">{activeReason.title}</p>
+            <p className="mt-4 font-hand text-2xl leading-snug">{activeReason.text}</p>
             <button
               onClick={() => setActive(null)}
               className="mt-8 font-sans text-[11px] tracking-[0.35em] uppercase opacity-70"
