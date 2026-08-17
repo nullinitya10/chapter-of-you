@@ -1,9 +1,9 @@
-import moodyPhoto from "@/assets/Snapchat-1024944467_jpg.jpg.asset.json";
+import moodyPhoto from "@/assets/hero.jpg.asset.json";
 import angelPhoto from "@/assets/Snapchat-1890181356_jpg.jpg.asset.json";
 import playfulPhoto from "@/assets/Snapchat-1302491271_jpg.jpg.asset.json";
 import bikePhoto from "@/assets/bike.jpg.asset.json";
 import letterOne from "@/assets/letter1.jpg.asset.json";
-import letterTwo from "@/assets/letter2.jpg.asset.json";
+import letterTwo from "@/assets/letter-universe.jpg.asset.json";
 import reelVideo from "@/assets/reel.mp4.asset.json";
 
 export const media = {

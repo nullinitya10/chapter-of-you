@@ -66,9 +66,11 @@ function Index() {
 
   return (
     <main className="relative min-h-[100svh] bg-background">
-      <header className="pointer-events-none fixed inset-x-0 top-0 z-40 flex items-center justify-between px-5 py-4 sm:px-10">
-        <span className="font-display text-lg tracking-[0.28em] text-primary">{SITE_NAME}</span>
-        <span className="font-sans text-[11px] tracking-[0.4em] text-muted-foreground uppercase">
+      <header className="pointer-events-none fixed inset-x-0 top-0 z-40 flex items-center justify-between gap-4 bg-gradient-to-b from-background to-transparent px-5 py-3 sm:px-10">
+        <span className="font-display text-sm tracking-[0.22em] text-primary sm:text-lg sm:tracking-[0.28em]">
+          {SITE_NAME}
+        </span>
+        <span className="truncate font-sans text-[10px] tracking-[0.3em] text-muted-foreground uppercase sm:text-[11px]">
           {String(index + 1).padStart(2, "0")} / {String(chapters.length).padStart(2, "0")} ·{" "}
           {label}
         </span>
